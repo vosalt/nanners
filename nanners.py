@@ -1,15 +1,15 @@
-#!/usr/bin/python3
+"""suddenly...thousands of them"""
 
 import shutil
 from time import sleep
 
-word = "BANANAS!"
+FRUIT = "BANANAS!"
 columns = shutil.get_terminal_size().columns
 
 print('This shit is bananas!'.center(columns))
 sleep(0.5)
 
-for letter in word:
+for letter in FRUIT:
     print(letter.center(columns))
     sleep(0.1)
 
